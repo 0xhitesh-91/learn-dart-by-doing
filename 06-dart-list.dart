@@ -72,9 +72,19 @@
 		growList.removeRange(0,4);
 		print("${growList} \n");
 	}
+
+	// to iterating through a list use forEach
+		
+		void iterator(){
+			List<String> iList = ["john", "mike", "alex", "smith"];
+			iList.forEach((item){
+				print("${iList.indexOf(item)} : $item");
+			});
+		}
 	
 	//main() function is entry point of program execution
 	main(){
 		fixedLengthList();
 		growableList();
+		iterator();
 	}
